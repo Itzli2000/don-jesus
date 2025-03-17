@@ -4,7 +4,6 @@ import en from "./languages/en.json";
 
 export function getLangFromUrl(url: URL) {
   const [, lang] = url.pathname.split("/");
-  console.log('lang', lang)
   if (["en", "es"].includes(lang)) return lang;
   return defaultLang;
 }
