@@ -1,0 +1,45 @@
+{
+    "site": {
+      "title": "Vacation Rental House",
+      "description": "Beautiful vacation rental house in a perfect location"
+    },
+    "nav": {
+      "home": "Home",
+      "contact": "Contact"
+    },
+    "home": {
+      "title": "Welcome to Our Vacation Rental",
+      "subtitle": "Your perfect getaway",
+      "description": "Enjoy your stay in our beautiful vacation rental house. Located in a scenic area with all the amenities you need for a comfortable stay.",
+      "features": {
+        "title": "Features",
+        "bedrooms": "Bedrooms",
+        "bathrooms": "Bathrooms",
+        "kitchen": "Fully equipped kitchen",
+        "wifi": "High-speed WiFi",
+        "parking": "Free parking"
+      },
+      "gallery": "Photo Gallery",
+      "cta": "Book Now"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "subtitle": "Interested in renting this property?",
+      "form": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone Number",
+        "arrival": "Arrival Date",
+        "departure": "Departure Date",
+        "guests": "Number of Guests",
+        "message": "Message",
+        "submit": "Send Inquiry"
+      },
+      "success": "Thank you for your inquiry. We will get back to you shortly."
+    },
+    "footer": {
+      "rights": "All rights reserved",
+      "terms": "Terms and Conditions",
+      "privacy": "Privacy Policy"
+    }
+  }

@@ -1,0 +1,45 @@
+{
+    "site": {
+      "title": "Casa de Alquiler Vacacional",
+      "description": "Hermosa casa de alquiler vacacional en una ubicación perfecta"
+    },
+    "nav": {
+      "home": "Inicio",
+      "contact": "Contacto"
+    },
+    "home": {
+      "title": "Bienvenido a Nuestra Casa de Alquiler",
+      "subtitle": "Tu escapada perfecta",
+      "description": "Disfruta de tu estancia en nuestra hermosa casa de alquiler vacacional. Ubicada en un área pintoresca con todas las comodidades que necesitas para una estancia confortable.",
+      "features": {
+        "title": "Características",
+        "bedrooms": "Dormitorios",
+        "bathrooms": "Baños",
+        "kitchen": "Cocina completamente equipada",
+        "wifi": "WiFi de alta velocidad",
+        "parking": "Estacionamiento gratuito"
+      },
+      "gallery": "Galería de Fotos",
+      "cta": "Reservar Ahora"
+    },
+    "contact": {
+      "title": "Contáctanos",
+      "subtitle": "¿Interesado en alquilar esta propiedad?",
+      "form": {
+        "name": "Nombre",
+        "email": "Correo Electrónico",
+        "phone": "Número de Teléfono",
+        "arrival": "Fecha de Llegada",
+        "departure": "Fecha de Salida",
+        "guests": "Número de Huéspedes",
+        "message": "Mensaje",
+        "submit": "Enviar Consulta"
+      },
+      "success": "Gracias por tu consulta. Nos pondremos en contacto contigo pronto."
+    },
+    "footer": {
+      "rights": "Todos los derechos reservados",
+      "terms": "Términos y Condiciones",
+      "privacy": "Política de Privacidad"
+    }
+  }

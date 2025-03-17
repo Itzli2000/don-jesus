@@ -1,0 +1,23 @@
+---
+import LanguageSwitcher from './LanguageSwitcher.astro';
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url) as 'en' | 'es';
+const t = useTranslations(lang);
+---
+
+<header class="bg-white shadow-md p-4">
+  <div class="container mx-auto flex justify-between items-center">
+    <div class="flex items-center">
+      <a href={`/${lang}`} class="text-2xl font-bold text-blue-600">
+        {t('site.title')}
+      </a>
+    </div>
+    <nav>
+      <ul class="flex space-x-6">
+        <li><a href={`/${lang}`} class="hover:text-blue-600">{t('nav.home')}</a></li>
+        <li><a href={`/${lang === 'en' ? 'en/contact' : 'es/contacto'}`} class="hover:text-blue-600">{t('nav.contact')}</a></li>
+        <li><LanguageSwitcher /></li>
+      </ul>
+    </nav>
+  </div>
+</header>

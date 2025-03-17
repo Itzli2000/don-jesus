@@ -1,0 +1,16 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+import ContactForm from "../../components/ContactForm.astro";
+
+const lang = getLangFromUrl(Astro.url) as "en" | "es";
+const t = useTranslations(lang);
+---
+
+<Layout
+  title={t("contact.title")}
+  description={t("contact.description")}
+  lang={lang}
+>
+  <ContactForm />
+</Layout>
