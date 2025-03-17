@@ -1,6 +1,6 @@
 {
     "site": {
-      "title": "Casa de Alquiler Vacacional",
+      "title": "Casa Don Jesús",
       "description": "Hermosa casa de alquiler vacacional en una ubicación perfecta"
     },
     "nav": {
@@ -23,7 +23,7 @@
       "cta": "Reservar Ahora"
     },
     "contact": {
-      "title": "Contáctanos",
+      "title": "Casa Don Jesús - Contáctanos",
       "subtitle": "¿Interesado en alquilar esta propiedad?",
       "form": {
         "name": "Nombre",

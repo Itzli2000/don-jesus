@@ -1,6 +1,6 @@
 {
     "site": {
-      "title": "Vacation Rental House",
+      "title": "Don Jesús House",
       "description": "Beautiful vacation rental house in a perfect location"
     },
     "nav": {
@@ -23,7 +23,7 @@
       "cta": "Book Now"
     },
     "contact": {
-      "title": "Contact Us",
+      "title": "Casa Don Jesús - Contact Us",
       "subtitle": "Interested in renting this property?",
       "form": {
         "name": "Name",
