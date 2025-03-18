@@ -1,0 +1,82 @@
+{
+  "site": {
+    "title": "Casa Don Jesús",
+    "description": "Beautiful vacation rental house in a perfect location"
+  },
+  "nav": {
+    "home": "Home",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Welcome to Casa Don Jesús",
+    "subtitle": "Your perfect getaway",
+    "description": "Enjoy your stay in our beautiful vacation rental house. Located in a scenic area with all the amenities you need for a comfortable stay.",
+    "gallery": "Photo Gallery",
+    "cta": "Book Now",
+    "contact_info": {
+      "title": "Contact Information",
+      "usa": "USA: 323-901-51-05",
+      "mexico": "MEXICO: 686-112-59-39",
+      "min_stay": "Minimum stay of 2 nights"
+    },
+    "property_details": {
+      "title": "Property Details",
+      "capacity": "Capacity for 12 people",
+      "parking": "Large covered parking for big vehicles"
+    },
+    "amenities": {
+      "title": "Services and Amenities",
+      "amenities": {
+        "title": "Amenities",
+        "security": "Security cameras",
+        "wifi": "Wi-Fi",
+        "tv": "TV"
+      },
+      "bedrooms": {
+        "title": "Bedrooms",
+        "total": "3 bedrooms",
+        "queen": "2 with Queen beds",
+        "bunk": "1 with matrimonial bunk beds"
+      },
+      "bathrooms": {
+        "title": "Bathrooms",
+        "indoor": "2 full indoor bathrooms",
+        "outdoor": "1 outdoor shower"
+      },
+      "outdoor": {
+        "title": "Outdoor",
+        "large": "Large and safe family patio"
+      },
+      "kitchen": {
+        "title": "Kitchen",
+        "equipped": "Equipped kitchen"
+      },
+      "location": {
+        "malecon": "10 minutes from the Malecon",
+        "beach": "Close and convenient beach access",
+        "food": "Dining options nearby",
+        "san_felipe": "Convenient access to San Felipe"
+      }
+    }
+  },
+  "contact": {
+    "title": "Casa Don Jesús - Contact Us",
+    "subtitle": "Interested in renting this property?",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "arrival": "Arrival Date",
+      "departure": "Departure Date",
+      "guests": "Number of Guests",
+      "message": "Message",
+      "submit": "Send Message"
+    },
+    "success": "Thank you for your inquiry. We will get back to you shortly."
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "terms": "Terms and Conditions",
+    "privacy": "Privacy Policy"
+  }
+}

@@ -1,0 +1,82 @@
+{
+    "site": {
+      "title": "Casa Don Jesús",
+      "description": "Hermosa casa de alquiler vacacional en una ubicación perfecta"
+    },
+    "nav": {
+      "home": "Inicio",
+      "contact": "Contacto"
+    },
+    "home": {
+      "title": "Bienvenido a Casa Don Jesús",
+      "subtitle": "Tu escapada perfecta",
+      "description": "Disfruta de tu estancia en nuestra hermosa casa de alquiler vacacional. Ubicada en un área pintoresca con todas las comodidades que necesitas para una estancia confortable.",
+      "gallery": "Galería de Fotos",
+      "cta": "Reservar Ahora",
+      "contact_info": {
+        "title": "Información de contacto",
+        "usa": "USA: 323-901-51-05",
+        "mexico": "MÉXICO: 686-112-59-39",
+        "min_stay": "Estancia mínima de 2 noches"
+      },
+      "property_details": {
+        "title": "Detalles de la propiedad",
+        "capacity": "Capacidad para 12 personas",
+        "parking": "Amplio estacionamiento techado para carros grandes"
+      },
+      "amenities": {
+        "title": "Servicios y comodidades",
+        "amenities": {
+          "title": "Amenidades",
+          "security": "Cámaras de seguridad",
+          "wifi": "Wi-Fi",
+          "tv": "TV"
+        },
+        "bedrooms": {
+          "title": "Habitaciones",
+          "total": "3 habitaciones",
+          "queen": "2 con cama Queen",
+          "bunk": "1 con literas matrimoniales"
+        },
+        "bathrooms": {
+          "title": "Baños",
+          "indoor": "2 baños completos interiores",
+          "outdoor": "1 Regadera exterior"
+        },
+        "outdoor": {
+          "title": "Patio",
+          "large": "Patio grande y seguro para la familia"
+        },
+        "kitchen": {
+          "title": "Cocina",
+          "equipped": "Cocina equipada"
+        },
+        "location": {
+          "malecon": "A 10 minutos del Malecón",
+          "beach": "Accesos cercanos y cómodos a la playa",
+          "food": "Opciones de comida cerca",
+          "san_felipe": "Acceso conveniente a San Felipe"
+        }
+      }
+    },
+    "contact": {
+      "title": "Casa Don Jesús - Contáctanos",
+      "subtitle": "¿Interesado en alquilar esta propiedad?",
+      "form": {
+        "name": "Nombre",
+        "email": "Correo Electrónico",
+        "phone": "Número de Teléfono",
+        "arrival": "Fecha de Llegada",
+        "departure": "Fecha de Salida",
+        "guests": "Número de Huéspedes",
+        "message": "Mensaje",
+        "submit": "Enviar Mensaje"
+      },
+      "success": "Gracias por tu consulta. Nos pondremos en contacto contigo pronto."
+    },
+    "footer": {
+      "rights": "Todos los derechos reservados",
+      "terms": "Términos y Condiciones",
+      "privacy": "Política de Privacidad"
+    }
+  }

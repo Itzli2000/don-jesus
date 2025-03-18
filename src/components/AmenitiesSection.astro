@@ -1,0 +1,64 @@
+---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url) as 'en' | 'es';
+const t = useTranslations(lang);
+---
+
+<section class="py-12 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">
+      {t('home.amenities.title')}
+    </h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Basic Amenities -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-4">{t('home.amenities.amenities.title')}</h3>
+        <ul class="space-y-2">
+          <li>✓ {t('home.amenities.security')}</li>
+          <li>✓ {t('home.amenities.wifi')}</li>
+          <li>✓ {t('home.amenities.tv')}</li>
+        </ul>
+      </div>
+
+      <!-- Bedrooms -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-4">{t('home.amenities.bedrooms.title')}</h3>
+        <ul class="space-y-2">
+          <li>✓ {t('home.amenities.bedrooms.total')}</li>
+          <li>✓ {t('home.amenities.bedrooms.queen')}</li>
+          <li>✓ {t('home.amenities.bedrooms.bunk')}</li>
+        </ul>
+      </div>
+
+      <!-- Bathrooms -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-4">{t('home.amenities.bathrooms.title')}</h3>
+        <ul class="space-y-2">
+          <li>✓ {t('home.amenities.bathrooms.indoor')}</li>
+          <li>✓ {t('home.amenities.bathrooms.outdoor')}</li>
+        </ul>
+      </div>
+
+      <!-- Outdoor & Kitchen -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-4">{t('home.amenities.outdoor.title')}</h3>
+        <ul class="space-y-2">
+          <li>✓ {t('home.amenities.outdoor.large')}</li>
+        </ul>
+      </div>
+
+      <!-- Location -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-4">Location</h3>
+        <ul class="space-y-2">
+          <li>✓ {t('home.amenities.location.malecon')}</li>
+          <li>✓ {t('home.amenities.location.beach')}</li>
+          <li>✓ {t('home.amenities.location.food')}</li>
+          <li>✓ {t('home.amenities.location.san_felipe')}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section> 

@@ -1,0 +1,155 @@
+---
+import { Picture } from "astro:assets";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+import amn1 from "../assets/amenidades/amn1.jpeg";
+import amn2 from "../assets/amenidades/amn2.jpeg";
+import amn3 from "../assets/amenidades/amn3.jpeg";
+import amn4 from "../assets/amenidades/amn4.jpeg";
+import amn5 from "../assets/amenidades/amn5.jpeg";
+import amn6 from "../assets/amenidades/amn6.jpeg";
+import amn7 from "../assets/amenidades/amn7.jpeg";
+import amn8 from "../assets/amenidades/amn8.jpeg";
+import amn9 from "../assets/amenidades/amn9.jpeg";
+import amn10 from "../assets/amenidades/amn10.jpeg";
+import amn11 from "../assets/amenidades/amn11.jpeg";
+import amn12 from "../assets/amenidades/amn12.jpeg";
+import amn13 from "../assets/amenidades/amn13.jpeg";
+import ext1 from "../assets/exterior/ext1.jpeg";
+import ext2 from "../assets/exterior/ext2.jpeg";
+import ext3 from "../assets/exterior/ext3.jpeg";
+import ext4 from "../assets/exterior/ext4.jpeg";
+import ext5 from "../assets/exterior/ext5.jpeg";
+import ext6 from "../assets/exterior/ext6.jpeg";
+import ext7 from "../assets/exterior/ext7.jpeg";
+import ext8 from "../assets/exterior/ext8.jpeg";
+import ext9 from "../assets/exterior/ext9.jpeg";
+import ext10 from "../assets/exterior/ext10.jpeg";
+
+
+const images = [
+  amn1,
+  amn2,
+  amn3,
+  amn4,
+  amn5,
+  amn6,
+  amn7,
+  amn8,
+  amn9,
+  amn10,
+  amn11,
+  amn12,
+  amn13,
+  ext1,
+  ext2,
+  ext3,
+  ext4,
+  ext5,
+  ext6,
+  ext7,
+  ext8,
+  ext9,
+  ext10,
+];
+
+const lang = getLangFromUrl(Astro.url) as "en" | "es";
+const t = useTranslations(lang);
+---
+
+<section class="py-16">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">
+      {t("home.gallery")}
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {
+        images.map((image, index) => (
+          <div
+            class="bg-gray-200 rounded-lg h-64 flex items-center justify-center overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+            data-image-index={index}
+          >
+            <Picture
+              transition:name={`image-${index}`}
+              src={image}
+              alt={`Image ${index + 1}`}
+              width={500}
+            />
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div
+  id="imageModal"
+  class="fixed inset-0 bg-black/75 hidden z-50 items-center justify-center"
+>
+  <div class="relative max-w-4xl w-full mx-4">
+    <button
+      id="closeModal"
+      class="absolute top-4 right-4 text-white text-2xl hover:text-gray-300 z-50"
+    >
+      ×
+    </button>
+    <div id="modalContent" class="relative flex items-center justify-center">
+      <!-- Modal content will be inserted here -->
+    </div>
+  </div>
+</div>
+
+<script>
+  const modal = document.getElementById("imageModal");
+  const modalContent = document.getElementById("modalContent");
+  const closeModal = document.getElementById("closeModal");
+  const images = document.querySelectorAll("[data-image-index]");
+  const imageArray = Array.from(images);
+
+  if (!modal || !modalContent || !closeModal) {
+    throw new Error("Required modal elements not found");
+  }
+
+  function openModal(index: number) {
+    const image = imageArray[index];
+    const pictureElement = image.querySelector("picture");
+    if (pictureElement && modalContent && modal) {
+      // Clone the picture element to preserve the transition
+      const clonedPicture = pictureElement.cloneNode(true) as HTMLElement;
+      modalContent.innerHTML = "";
+      modalContent.appendChild(clonedPicture);
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+      document.body.style.overflow = "hidden";
+    }
+  }
+
+  function closeModalHandler() {
+    if (modal) {
+      modal.classList.remove("flex");
+      modal.classList.add("hidden");
+      document.body.style.overflow = "auto";
+    }
+  }
+
+  // Add click event listeners
+  images.forEach((image, index) => {
+    image.addEventListener("click", () => openModal(index));
+  });
+
+  closeModal.addEventListener("click", closeModalHandler);
+
+  // Close modal when clicking outside the image
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      closeModalHandler();
+    }
+  });
+
+  // Close modal with Escape key
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+      closeModalHandler();
+    }
+  });
+</script>

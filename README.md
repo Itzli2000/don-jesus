@@ -1,48 +1,87 @@
-# Astro Starter Kit: Basics
+# Casa Don Jesús Website
 
-```sh
-yarn create astro@latest -- --template basics
+A bilingual (English/Spanish) website for a vacation rental property built with Astro.
+
+## Features
+
+- Bilingual content (English and Spanish)
+- Responsive design using Tailwind CSS
+- Contact form with booking request capabilities
+- Photo gallery
+- Property features display
+- Location map (placeholder)
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or later)
+- yarn
+
+### Installation
+
+1. Clone this repository or download the files
+2. Navigate to the project directory
+3. Install dependencies:
+
+```bash
+yarn install
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+### Development
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Run the development server:
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+yarn astro dev
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+Visit http://localhost:3000 to see the site in action.
 
-## 🧞 Commands
+### Building for Production
 
-All commands are run from the root of the project, from a terminal:
+To build the site for production:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `yarn install`             | Installs dependencies                            |
-| `yarn dev`             | Starts local dev server at `localhost:4321`      |
-| `yarn build`           | Build your production site to `./dist/`          |
-| `yarn preview`         | Preview your build locally, before deploying     |
-| `yarn astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `yarn astro -- --help` | Get help using the Astro CLI                     |
+```bash
+yarn astro build
+```
 
-## 👀 Want to learn more?
+This will generate static files in the `dist` directory that can be deployed to any static hosting service like Netlify, Vercel, or GitHub Pages.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Project Structure
+
+- `src/pages/` - All page templates (English and Spanish versions)
+- `src/components/` - Reusable UI components
+- `src/layouts/` - Page layouts
+- `src/i18n/` - Translation files
+- `src/utils/` - Utility functions for i18n and other purposes
+- `src/styles/` - Global CSS styles
+
+## Customization
+
+### Adding Your Content
+
+1. Replace placeholder text in the `en.json` and `es.json` files
+2. Replace the placeholder images with actual property photos
+3. Update property features, descriptions, and other content
+4. Add your actual location for the map
+
+### Styling
+
+The site uses Tailwind CSS for styling. You can customize the design by:
+
+1. Modifying the `tailwind.config.js` file
+2. Adding custom styles in `src/styles/global.css`
+3. Adjusting the components' class names
+
+## Deployment
+
+After building the site, you can deploy the contents of the `dist` directory to any static hosting service. Popular options include:
+
+- Netlify
+- Vercel
+- GitHub Pages
+- Cloudflare Pages
+- AWS S3 + CloudFront
+
+Most of these services offer automatic deployment from Git repositories.
