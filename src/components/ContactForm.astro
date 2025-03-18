@@ -3,9 +3,17 @@ import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url) as "en" | "es";
 const t = useTranslations(lang);
+
+const WEB3FORMS_KEY = import.meta.env.WEB3FORMS_KEY;
+const WEB3FORMS_URL = import.meta.env.WEB3FORMS_URL;
 ---
 
-<form class="space-y-6" action="/api/submit-form" method="POST">
+<form
+  class="space-y-6 max-w-3xl w-full mx-auto"
+  action={WEB3FORMS_URL}
+  method="POST"
+>
+  <input type="hidden" name="access_key" value={WEB3FORMS_KEY} />
   <div>
     <label for="name" class="block text-sm font-medium text-gray-700"
       >{t("contact.form.name")}</label

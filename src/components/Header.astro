@@ -1,6 +1,9 @@
 ---
 import LanguageSwitcher from './LanguageSwitcher.astro';
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { Picture } from 'astro:assets';
+import fullLogo from '../assets/fullLogo.svg';
+
 const lang = getLangFromUrl(Astro.url) as 'en' | 'es';
 const t = useTranslations(lang);
 ---
@@ -9,7 +12,7 @@ const t = useTranslations(lang);
   <div class="container mx-auto flex justify-between items-center">
     <div class="flex items-center">
       <a href={`/${lang}`} class="text-2xl font-bold text-blue-600">
-        {t('site.title')}
+        <Picture src={fullLogo} alt="Don Jesús" width={200} height={50} />
       </a>
     </div>
     <nav>

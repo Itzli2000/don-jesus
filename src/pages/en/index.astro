@@ -1,7 +1,10 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { useTranslations } from '../../i18n/utils';
-
+import { Picture } from 'astro:assets';
+import sanFelipe from '../../assets/san_felipe.jpeg';
+import AmenitiesSection from '../../components/AmenitiesSection.astro';
+import ImageSlider from '../../components/ImageSlider.astro';
 const lang = 'en';
 const t = useTranslations(lang);
 ---
@@ -39,55 +42,12 @@ const t = useTranslations(lang);
             Nullam egestas metus at diam faucibus, ut ultrices odio bibendum.
           </p>
         </div>
-        <div class="bg-gray-200 rounded-lg h-80 flex items-center justify-center">
-          <p class="text-lg text-gray-500">Main House Image</p>
-        </div>
+        <Picture src={sanFelipe} alt="Main House" width={550} height={300} />
       </div>
     </div>
   </section>
 
-  <section class="py-16 bg-gray-50">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">{t('home.features.title')}</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold mb-4">3 {t('home.features.bedrooms')}</h3>
-          <p class="text-gray-600">Spacious bedrooms with comfortable beds and plenty of storage.</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold mb-4">2 {t('home.features.bathrooms')}</h3>
-          <p class="text-gray-600">Modern bathrooms with shower, bath and all necessary amenities.</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold mb-4">{t('home.features.kitchen')}</h3>
-          <p class="text-gray-600">Everything you need to prepare delicious meals during your stay.</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold mb-4">{t('home.features.wifi')}</h3>
-          <p class="text-gray-600">Stay connected with reliable high-speed internet throughout the house.</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold mb-4">{t('home.features.parking')}</h3>
-          <p class="text-gray-600">Convenient parking space right outside the property.</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold mb-4">Garden</h3>
-          <p class="text-gray-600">Beautiful private garden to relax and enjoy the outdoors.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <AmenitiesSection />
 
-  <section class="py-16">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">{t('home.gallery')}</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {Array.from({ length: 6 }).map((_, i) => (
-          <div class="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
-            <p class="text-lg text-gray-500">Image {i + 1}</p>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
+  <ImageSlider />
 </Layout>
