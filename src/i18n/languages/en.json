@@ -34,6 +34,7 @@
       },
       "bedrooms": {
         "title": "Bedrooms",
+        "capacity": "Capacity for 12 people",
         "total": "3 bedrooms",
         "queen": "2 with Queen beds",
         "bunk": "1 with matrimonial bunk beds"
@@ -45,13 +46,15 @@
       },
       "outdoor": {
         "title": "Outdoor",
-        "large": "Large and safe family patio"
+        "large": "Large and safe family patio",
+        "large_description": "Large closed parking for big vehicles"
       },
       "kitchen": {
         "title": "Kitchen",
         "equipped": "Equipped kitchen"
       },
       "location": {
+        "title": "Location",
         "malecon": "10 minutes from the Malecon",
         "beach": "Close and convenient beach access",
         "food": "Dining options nearby",

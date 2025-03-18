@@ -34,6 +34,7 @@
         },
         "bedrooms": {
           "title": "Habitaciones",
+          "capacity": "Capacidad para 12 personas",
           "total": "3 habitaciones",
           "queen": "2 con cama Queen",
           "bunk": "1 con literas matrimoniales"
@@ -45,13 +46,15 @@
         },
         "outdoor": {
           "title": "Patio",
-          "large": "Patio grande y seguro para la familia"
+          "large": "Patio grande y seguro para la familia",
+          "large_description": "Amplio estacionamiento cerrado para carros grandes"
         },
         "kitchen": {
           "title": "Cocina",
           "equipped": "Cocina equipada"
         },
         "location": {
+          "title": "Ubicación",
           "malecon": "A 10 minutos del Malecón",
           "beach": "Accesos cercanos y cómodos a la playa",
           "food": "Opciones de comida cerca",

@@ -16,9 +16,9 @@ const t = useTranslations(lang);
       <div class="bg-white p-6 rounded-lg shadow-md">
         <h3 class="text-xl font-semibold mb-4">{t('home.amenities.amenities.title')}</h3>
         <ul class="space-y-2">
-          <li>✓ {t('home.amenities.security')}</li>
-          <li>✓ {t('home.amenities.wifi')}</li>
-          <li>✓ {t('home.amenities.tv')}</li>
+          <li>✓ {t('home.amenities.amenities.security')}</li>
+          <li>✓ {t('home.amenities.amenities.wifi')}</li>
+          <li>✓ {t('home.amenities.amenities.tv')}</li>
         </ul>
       </div>
 
@@ -26,6 +26,7 @@ const t = useTranslations(lang);
       <div class="bg-white p-6 rounded-lg shadow-md">
         <h3 class="text-xl font-semibold mb-4">{t('home.amenities.bedrooms.title')}</h3>
         <ul class="space-y-2">
+          <li>✓ {t('home.amenities.bedrooms.capacity')}</li>
           <li>✓ {t('home.amenities.bedrooms.total')}</li>
           <li>✓ {t('home.amenities.bedrooms.queen')}</li>
           <li>✓ {t('home.amenities.bedrooms.bunk')}</li>
@@ -46,12 +47,13 @@ const t = useTranslations(lang);
         <h3 class="text-xl font-semibold mb-4">{t('home.amenities.outdoor.title')}</h3>
         <ul class="space-y-2">
           <li>✓ {t('home.amenities.outdoor.large')}</li>
+          <li>✓ {t('home.amenities.outdoor.large_description')}</li>
         </ul>
       </div>
 
       <!-- Location -->
       <div class="bg-white p-6 rounded-lg shadow-md">
-        <h3 class="text-xl font-semibold mb-4">Location</h3>
+        <h3 class="text-xl font-semibold mb-4">{t('home.amenities.location.title')}</h3>
         <ul class="space-y-2">
           <li>✓ {t('home.amenities.location.malecon')}</li>
           <li>✓ {t('home.amenities.location.beach')}</li>
