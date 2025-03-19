@@ -8,9 +8,10 @@
     "contact": "Contact"
   },
   "home": {
-    "title": "Welcome to Casa Don Jesús",
-    "subtitle": "Your perfect getaway",
-    "description": "Enjoy your stay in our beautiful vacation rental house. Located in a scenic area with all the amenities you need for a comfortable stay.",
+    "title": "Welcome",
+    "subtitle": "to your perfect getaway",
+    "description": "Enjoy your stay in our beautiful vacation rental house.",
+    "description2": "Located in a scenic area with all the amenities you need for a comfortable stay.",
     "gallery": "Photo Gallery",
     "cta": "Book Now",
     "contact_info": {
@@ -30,7 +31,9 @@
         "title": "Amenities",
         "security": "Security cameras",
         "wifi": "Wi-Fi",
-        "tv": "TV"
+        "tv": "TV",
+        "ac": "Air conditioning and heating",
+        "laundry": "Laundry room"
       },
       "bedrooms": {
         "title": "Bedrooms",

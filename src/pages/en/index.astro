@@ -4,8 +4,8 @@ import { useTranslations } from "../../i18n/utils";
 import { Picture } from "astro:assets";
 import AmenitiesSection from "../../components/AmenitiesSection.astro";
 import ImageSlider from "../../components/ImageSlider.astro";
-import faro from "../../assets/otros/othr11.jpeg";
-import frnt1 from "../../assets/frente/frnt1.jpeg";
+import faro from "../../assets/faro.jpeg";
+import main from "../../assets/main.jpeg";
 
 const lang = "en";
 const t = useTranslations(lang);
@@ -41,21 +41,20 @@ const t = useTranslations(lang);
   </section>
 
   <section class="py-16">
-    <div class="container max-w-5xl text-center mx-auto px-4 flex flex-col items-center gap-4">
-      <h2 class="text-3xl font-bold text-gray-800 mb-6">
-        {t("home.description")}
-      </h2>
-      <Picture src={frnt1} alt="Main House" width={700} />
-      <p class="text-gray-600 mb-6">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.
-        Morbi vel libero vitae elit sagittis sagittis. Donec vel odio ut nisi
-        suscipit convallis. Integer vel nisi vel augue venenatis faucibus.
-      </p>
-      <p class="text-gray-600">
-        Mauris euismod ultricies leo, et sollicitudin odio hendrerit non. Sed
-        vel risus vel nibh dictum varius non sit amet enim. Nullam egestas metus
-        at diam faucibus, ut ultrices odio bibendum.
-      </p>
+    <div
+      class="container max-w-5xl text-center mx-auto px-4 flex flex-col items-center gap-4"
+    >
+    <h2 class="text-3xl font-bold text-gray-800 mb-6">
+      {t("home.description")}
+    </h2>
+    <p class="text-gray-600 text-xl mb-6">
+      {t("home.description2")}
+    </p>
+      <Picture
+        src={main}
+        alt="Background"
+        class="w-full h-full object-cover top-0"
+      />
     </div>
   </section>
 

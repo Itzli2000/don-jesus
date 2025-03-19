@@ -1,5 +1,8 @@
-<svg width="310" height="85" viewBox="0 0 310 85" xmlns="http://www.w3.org/2000/svg">
-  <text x="10" y="60" font-family="cursive" font-size="65" fill="#0077b6">
+<svg width="650" height="110" viewBox="0 0 650 110" xmlns="http://www.w3.org/2000/svg">
+  <text x="30" y="45" font-family="cursive" font-size="45" fill="#0077b6">
+    Casa
+  </text>
+  <text x="60" y="95" font-family="cursive" font-size="55" fill="#0077b6">
     Don Jesús
   </text>
 </svg>

@@ -8,9 +8,10 @@
       "contact": "Contacto"
     },
     "home": {
-      "title": "Bienvenido a Casa Don Jesús",
-      "subtitle": "Tu escapada perfecta",
-      "description": "Disfruta de tu estancia en nuestra hermosa casa de alquiler vacacional. Ubicada en un área pintoresca con todas las comodidades que necesitas para una estancia confortable.",
+      "title": "Bienvenido",
+      "subtitle": "a tu escapada perfecta",
+      "description": "Disfruta de tu estancia en nuestra hermosa casa de alquiler vacacional.",
+      "description2": "Ubicada en un área pintoresca con todas las comodidades que necesitas para una estancia confortable.",
       "gallery": "Galería de Fotos",
       "cta": "Reservar Ahora",
       "contact_info": {
@@ -30,7 +31,9 @@
           "title": "Amenidades",
           "security": "Cámaras de seguridad",
           "wifi": "Wi-Fi",
-          "tv": "TV"
+          "tv": "TV",
+          "ac": "Aire acondicionado y calefacción",
+          "laundry": "Cuarto de lavado"
         },
         "bedrooms": {
           "title": "Habitaciones",

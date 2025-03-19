@@ -1,67 +1,44 @@
 ---
 import { Picture } from "astro:assets";
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
-import amn1 from "../assets/amenidades/amn1.jpeg";
-import amn2 from "../assets/amenidades/amn2.jpeg";
-import amn3 from "../assets/amenidades/amn3.jpeg";
-import amn4 from "../assets/amenidades/amn4.jpeg";
-import amn5 from "../assets/amenidades/amn5.jpeg";
-import amn6 from "../assets/amenidades/amn6.jpeg";
-import amn7 from "../assets/amenidades/amn7.jpeg";
-import amn8 from "../assets/amenidades/amn8.jpeg";
-import amn9 from "../assets/amenidades/amn9.jpeg";
-import amn10 from "../assets/amenidades/amn10.jpeg";
-import amn11 from "../assets/amenidades/amn11.jpeg";
-import amn12 from "../assets/amenidades/amn12.jpeg";
-import amn13 from "../assets/amenidades/amn13.jpeg";
-import ext1 from "../assets/exterior/ext1.jpeg";
-import ext2 from "../assets/exterior/ext2.jpeg";
-import ext3 from "../assets/exterior/ext3.jpeg";
-import ext4 from "../assets/exterior/ext4.jpeg";
-import ext5 from "../assets/exterior/ext5.jpeg";
-import ext6 from "../assets/exterior/ext6.jpeg";
-import ext7 from "../assets/exterior/ext7.jpeg";
-import ext8 from "../assets/exterior/ext8.jpeg";
-import ext9 from "../assets/exterior/ext9.jpeg";
-import ext10 from "../assets/exterior/ext10.jpeg";
-import frnt1 from "../assets/frente/frnt1.jpeg";
-import frnt2 from "../assets/frente/frnt2.jpeg";
-import frnt3 from "../assets/frente/frnt3.jpeg";
-import frnt4 from "../assets/frente/frnt4.jpeg";
-import frnt5 from "../assets/frente/frnt5.jpeg";
-
-
+import gallery1 from "../assets/gallery/gallery1.jpeg";
+import gallery2 from "../assets/gallery/gallery2.jpeg";
+import gallery3 from "../assets/gallery/gallery3.jpeg";
+import gallery4 from "../assets/gallery/gallery4.jpeg";
+import gallery5 from "../assets/gallery/gallery5.jpeg";
+import gallery6 from "../assets/gallery/gallery6.jpeg";
+import gallery7 from "../assets/gallery/gallery7.jpeg";
+import gallery8 from "../assets/gallery/gallery8.jpeg";
+import gallery9 from "../assets/gallery/gallery9.jpeg";
+import gallery10 from "../assets/gallery/gallery10.jpeg";
+import gallery11 from "../assets/gallery/gallery11.jpeg";
+import gallery12 from "../assets/gallery/gallery12.jpeg";
+import gallery13 from "../assets/gallery/gallery13.jpeg";
+import gallery14 from "../assets/gallery/gallery14.jpeg";
+import gallery15 from "../assets/gallery/gallery15.jpeg";
+import gallery16 from "../assets/gallery/gallery16.jpeg";
+import gallery17 from "../assets/gallery/gallery17.jpeg";
+import gallery18 from "../assets/gallery/gallery18.jpeg";
 
 const images = [
-  frnt1,
-  frnt2,
-  frnt3,
-  frnt4,
-  frnt5, 
-  ext6,
-  ext7,
-  ext8,
-  ext9,
-  ext10,
-  ext1,
-  ext2,
-  ext3,
-  ext4,
-  ext5,
-  amn2,
-  amn3,
-  amn4,
-  amn5,
-  amn6,
-  amn7,
-  amn9,
-  amn10,
-  amn11,
-  amn12,
-  amn13,
-  amn1,
-  amn8,
- 
+  gallery1,
+  gallery2,
+  gallery3,
+  gallery4,
+  gallery5,
+  gallery6,
+  gallery7,
+  gallery8,
+  gallery9,
+  gallery10,
+  gallery11,
+  gallery12,
+  gallery13,
+  gallery14,
+  gallery15,
+  gallery16,
+  gallery17,
+  gallery18,
 ];
 
 const lang = getLangFromUrl(Astro.url) as "en" | "es";
