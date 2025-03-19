@@ -11,11 +11,19 @@ if (lang === "en") {
   if (otherLangPath.includes("/contact")) {
     otherLangPath = otherLangPath.replace("/contact", "/contacto");
   }
+
+  if (otherLangPath.includes("/calendar")) {
+    otherLangPath = otherLangPath.replace("/calendar", "/calendario");
+  }
 } else {
   otherLangPath = currentPath.replace(/^\/es/, "/en");
 
   if (otherLangPath.includes("/contacto")) {
     otherLangPath = otherLangPath.replace("/contacto", "/contact");
+  }
+
+  if (otherLangPath.includes("/calendario")) {
+    otherLangPath = otherLangPath.replace("/calendario", "/calendar");
   }
 }
 

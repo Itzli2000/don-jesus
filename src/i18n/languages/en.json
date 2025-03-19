@@ -5,7 +5,8 @@
   },
   "nav": {
     "home": "Home",
-    "contact": "Contact"
+    "contact": "Contact",
+    "calendar": "Calendar"
   },
   "home": {
     "title": "Welcome",
@@ -84,5 +85,32 @@
     "rights": "All rights reserved",
     "terms": "Terms and Conditions",
     "privacy": "Privacy Policy"
+  },
+  "calendar": {
+    "title": "Calendar",
+    "subtitle": "Book your stay in our beautiful vacation rental house.",
+    "months":{
+      "january": "January",
+      "february": "February",
+      "march": "March",
+      "april": "April",
+      "may": "May",
+      "june": "June",
+      "july": "July",
+      "august": "August",
+      "september": "September",
+      "october": "October",
+      "november": "November",
+      "december": "December"
+    },
+    "weekdays": {
+      "sunday": "Sun",
+      "monday": "Mon",
+      "tuesday": "Tue",
+      "wednesday": "Wed",
+      "thursday": "Thu",
+      "friday": "Fri",
+      "saturday": "Sat"
+    }
   }
 }

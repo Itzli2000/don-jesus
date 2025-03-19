@@ -19,6 +19,7 @@ const t = useTranslations(lang);
       <ul class="flex space-x-6">
         <li><a href={`/${lang}`} class="hover:text-blue-600">{t('nav.home')}</a></li>
         <li><a href={`/${lang === 'en' ? 'en/contact' : 'es/contacto'}`} class="hover:text-blue-600">{t('nav.contact')}</a></li>
+        <li><a href={`/${lang === 'en' ? 'en/calendar' : 'es/calendario'}`} class="hover:text-blue-600">{t('nav.calendar')}</a></li>
         <li><LanguageSwitcher /></li>
       </ul>
     </nav>

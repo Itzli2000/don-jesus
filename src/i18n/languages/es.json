@@ -1,88 +1,116 @@
 {
-    "site": {
-      "title": "Casa Don Jesús",
-      "description": "Hermosa casa de alquiler vacacional en una ubicación perfecta"
+  "site": {
+    "title": "Casa Don Jesús",
+    "description": "Hermosa casa de alquiler vacacional en una ubicación perfecta"
+  },
+  "nav": {
+    "home": "Inicio",
+    "contact": "Contacto",
+    "calendar": "Calendario"
+  },
+  "home": {
+    "title": "Bienvenido",
+    "subtitle": "a tu escapada perfecta",
+    "description": "Disfruta de tu estancia en nuestra hermosa casa de alquiler vacacional.",
+    "description2": "Ubicada en un área pintoresca con todas las comodidades que necesitas para una estancia confortable.",
+    "gallery": "Galería de Fotos",
+    "cta": "Reservar Ahora",
+    "contact_info": {
+      "title": "Información de contacto",
+      "usa": "USA: 323-901-51-05",
+      "mexico": "MÉXICO: 686-112-59-39",
+      "min_stay": "Estancia mínima de 2 noches"
     },
-    "nav": {
-      "home": "Inicio",
-      "contact": "Contacto"
+    "property_details": {
+      "title": "Detalles de la propiedad",
+      "capacity": "Capacidad para 12 personas",
+      "parking": "Amplio estacionamiento techado para carros grandes"
     },
-    "home": {
-      "title": "Bienvenido",
-      "subtitle": "a tu escapada perfecta",
-      "description": "Disfruta de tu estancia en nuestra hermosa casa de alquiler vacacional.",
-      "description2": "Ubicada en un área pintoresca con todas las comodidades que necesitas para una estancia confortable.",
-      "gallery": "Galería de Fotos",
-      "cta": "Reservar Ahora",
-      "contact_info": {
-        "title": "Información de contacto",
-        "usa": "USA: 323-901-51-05",
-        "mexico": "MÉXICO: 686-112-59-39",
-        "min_stay": "Estancia mínima de 2 noches"
-      },
-      "property_details": {
-        "title": "Detalles de la propiedad",
-        "capacity": "Capacidad para 12 personas",
-        "parking": "Amplio estacionamiento techado para carros grandes"
-      },
+    "amenities": {
+      "title": "Servicios y comodidades",
       "amenities": {
-        "title": "Servicios y comodidades",
-        "amenities": {
-          "title": "Amenidades",
-          "security": "Cámaras de seguridad",
-          "wifi": "Wi-Fi",
-          "tv": "TV",
-          "ac": "Aire acondicionado y calefacción",
-          "laundry": "Cuarto de lavado"
-        },
-        "bedrooms": {
-          "title": "Habitaciones",
-          "capacity": "Capacidad para 12 personas",
-          "total": "3 habitaciones",
-          "queen": "2 con cama Queen",
-          "bunk": "1 con literas matrimoniales"
-        },
-        "bathrooms": {
-          "title": "Baños",
-          "indoor": "2 baños completos interiores",
-          "outdoor": "1 Regadera exterior"
-        },
-        "outdoor": {
-          "title": "Patio",
-          "large": "Patio grande y seguro para la familia",
-          "large_description": "Amplio estacionamiento cerrado para carros grandes"
-        },
-        "kitchen": {
-          "title": "Cocina",
-          "equipped": "Cocina equipada"
-        },
-        "location": {
-          "title": "Ubicación",
-          "malecon": "A 10 minutos del Malecón",
-          "beach": "Accesos cercanos y cómodos a la playa",
-          "food": "Opciones de comida cerca",
-          "san_felipe": "Acceso conveniente a San Felipe"
-        }
-      }
-    },
-    "contact": {
-      "title": "Casa Don Jesús - Contáctanos",
-      "subtitle": "¿Interesado en alquilar esta propiedad?",
-      "form": {
-        "name": "Nombre",
-        "email": "Correo Electrónico",
-        "phone": "Número de Teléfono",
-        "arrival": "Fecha de Llegada",
-        "departure": "Fecha de Salida",
-        "guests": "Número de Huéspedes",
-        "message": "Mensaje",
-        "submit": "Enviar Mensaje"
+        "title": "Amenidades",
+        "security": "Cámaras de seguridad",
+        "wifi": "Wi-Fi",
+        "tv": "TV",
+        "ac": "Aire acondicionado y calefacción",
+        "laundry": "Cuarto de lavado"
       },
-      "success": "Gracias por tu consulta. Nos pondremos en contacto contigo pronto."
+      "bedrooms": {
+        "title": "Habitaciones",
+        "capacity": "Capacidad para 12 personas",
+        "total": "3 habitaciones",
+        "queen": "2 con cama Queen",
+        "bunk": "1 con literas matrimoniales"
+      },
+      "bathrooms": {
+        "title": "Baños",
+        "indoor": "2 baños completos interiores",
+        "outdoor": "1 Regadera exterior"
+      },
+      "outdoor": {
+        "title": "Patio",
+        "large": "Patio grande y seguro para la familia",
+        "large_description": "Amplio estacionamiento cerrado para carros grandes"
+      },
+      "kitchen": {
+        "title": "Cocina",
+        "equipped": "Cocina equipada"
+      },
+      "location": {
+        "title": "Ubicación",
+        "malecon": "A 10 minutos del Malecón",
+        "beach": "Accesos cercanos y cómodos a la playa",
+        "food": "Opciones de comida cerca",
+        "san_felipe": "Acceso conveniente a San Felipe"
+      }
+    }
+  },
+  "contact": {
+    "title": "Casa Don Jesús - Contáctanos",
+    "subtitle": "¿Interesado en alquilar esta propiedad?",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo Electrónico",
+      "phone": "Número de Teléfono",
+      "arrival": "Fecha de Llegada",
+      "departure": "Fecha de Salida",
+      "guests": "Número de Huéspedes",
+      "message": "Mensaje",
+      "submit": "Enviar Mensaje"
     },
-    "footer": {
-      "rights": "Todos los derechos reservados",
-      "terms": "Términos y Condiciones",
-      "privacy": "Política de Privacidad"
+    "success": "Gracias por tu consulta. Nos pondremos en contacto contigo pronto."
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados",
+    "terms": "Términos y Condiciones",
+    "privacy": "Política de Privacidad"
+  },
+  "calendar": {
+    "title": "Calendario",
+    "subtitle": "Reserva tu estancia en nuestra hermosa casa de alquiler vacacional.",
+    "months": {
+      "january": "Enero",
+      "february": "Febrero",
+      "march": "Marzo",
+      "april": "Abril",
+      "may": "Mayo",
+      "june": "Junio",
+      "july": "Julio",
+      "august": "Agosto",
+      "september": "Septiembre",
+      "october": "Octubre",
+      "november": "Noviembre",
+      "december": "Diciembre"
+    },
+    "weekdays": {
+      "sunday": "Dom",
+      "monday": "Lun",
+      "tuesday": "Mar",
+      "wednesday": "Mie",
+      "thursday": "Jue",
+      "friday": "Vie",
+      "saturday": "Sab"
     }
   }
+}

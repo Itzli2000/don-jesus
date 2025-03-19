@@ -4,6 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
+    site: 'http://casadonjesus.com/', // Replace with your actual domain
     vite: {
         plugins: [tailwindcss()],
     },
