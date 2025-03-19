@@ -1,0 +1,112 @@
+---
+import { Picture } from "astro:assets";
+import Grid1 from "../assets/grid/grid1.jpeg";
+import Grid2 from "../assets/grid/grid2.jpeg";
+import Grid3 from "../assets/grid/grid3.jpeg";
+import Score1 from "../assets/grid/grid4.jpeg";
+import Grid5 from "../assets/grid/grid5.jpeg";
+import sanFelipe from "../assets/grid/grid6.jpeg";
+import Grid7 from "../assets/grid/grid7.jpeg";
+import Grid8 from "../assets/grid/grid8.jpeg";
+import Score2 from "../assets/grid/grid9.jpeg";
+import Faro from "../assets/faro.jpeg";
+import { EVENTS } from "../constants/events";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+import Layout from "../layouts/Layout.astro";
+import EventCard from "./EventCard.astro";
+
+const lang = getLangFromUrl(Astro.url) as "en" | "es";
+const t = useTranslations(lang);
+---
+
+<Layout
+  title={t("events.title")}
+  description={t("events.subtitle")}
+  lang={lang}
+>
+  <section class="py-12">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-8">
+        {t("events.title")}
+      </h2>
+      <p class="text-center text-gray-600 mb-8">{t("events.subtitle")}</p>
+      <Picture
+        src={sanFelipe}
+        alt="San Felipe"
+        width={800}
+        class="mx-auto my-8"
+      />
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {EVENTS.map((event) => <EventCard key={event.id} event={event} />)}
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
+        <div class="grid gap-4">
+          <Picture
+            src={Score1}
+            alt="SCORE San Felipe 250"
+            width={600}
+            class="h-auto max-w-full rounded-lg"
+          />
+          <Picture
+            src={Grid7}
+            alt="SCORE San Felipe 250"
+            width={600}
+            class="h-auto max-w-full rounded-lg"
+          />
+          <Picture
+            src={Grid1}
+            alt="SCORE San Felipe 250"
+            width={600}
+            class="h-auto max-w-full rounded-lg"
+          />
+        </div>
+        <div class="grid gap-4">
+          <Picture
+            src={Grid2}
+            alt="SCORE San Felipe 250"
+            width={600}
+            class="h-auto max-w-full rounded-lg"
+          />
+          <Picture
+            src={Grid8}
+            alt="SCORE San Felipe 250"
+            width={600}
+            class="h-auto max-w-full rounded-lg"
+          />
+          <Picture
+            src={Grid5}
+            alt="SCORE San Felipe 250"
+            width={600}
+            class="h-auto max-w-full rounded-lg"
+          />
+        </div>
+        <div class="grid gap-4">
+          <Picture
+            src={Score2}
+            alt="SCORE San Felipe 250"
+            width={600}
+            class="h-auto max-w-full rounded-lg"
+          />
+          <Picture
+            src={Faro}
+            alt="Faro"
+            width={600}
+            class="h-auto max-w-full rounded-lg"
+          />
+          <Picture
+            src={sanFelipe}
+            alt="San Felipe"
+            width={600}
+            class="h-auto max-w-full rounded-lg"
+          />
+          <Picture
+            src={Grid3}
+            alt="SCORE San Felipe 250"
+            width={600}
+            class="h-auto max-w-full rounded-lg"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

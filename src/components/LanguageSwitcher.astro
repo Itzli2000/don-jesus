@@ -8,8 +8,8 @@ let otherLangPath = "";
 if (lang === "en") {
   otherLangPath = currentPath.replace(/^\/en/, "/es");
 
-  if (otherLangPath.includes("/contact")) {
-    otherLangPath = otherLangPath.replace("/contact", "/contacto");
+  if (otherLangPath.includes("/events")) {
+    otherLangPath = otherLangPath.replace("/events", "/eventos");
   }
 
   if (otherLangPath.includes("/calendar")) {
@@ -18,8 +18,8 @@ if (lang === "en") {
 } else {
   otherLangPath = currentPath.replace(/^\/es/, "/en");
 
-  if (otherLangPath.includes("/contacto")) {
-    otherLangPath = otherLangPath.replace("/contacto", "/contact");
+  if (otherLangPath.includes("/eventos")) {
+    otherLangPath = otherLangPath.replace("/eventos", "/events");
   }
 
   if (otherLangPath.includes("/calendario")) {

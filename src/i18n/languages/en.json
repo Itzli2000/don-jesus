@@ -6,7 +6,7 @@
   "nav": {
     "home": "Home",
     "contact": "Contact",
-    "calendar": "Calendar"
+    "events": "Events"
   },
   "home": {
     "title": "Welcome",
@@ -41,7 +41,7 @@
         "capacity": "Capacity for 12 people",
         "total": "3 bedrooms",
         "queen": "2 with Queen beds",
-        "bunk": "1 with matrimonial bunk beds"
+        "bunk": "1 with 2 matrimonial bunk beds"
       },
       "bathrooms": {
         "title": "Bathrooms",
@@ -86,9 +86,11 @@
     "terms": "Terms and Conditions",
     "privacy": "Privacy Policy"
   },
+  "events": {
+    "title": "Events",
+    "subtitle": "Get information about events in the San Felipe area"
+  },
   "calendar": {
-    "title": "Calendar",
-    "subtitle": "Book your stay in our beautiful vacation rental house.",
     "months":{
       "january": "January",
       "february": "February",

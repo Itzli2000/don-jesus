@@ -6,7 +6,7 @@
   "nav": {
     "home": "Inicio",
     "contact": "Contacto",
-    "calendar": "Calendario"
+    "events": "Eventos"
   },
   "home": {
     "title": "Bienvenido",
@@ -41,7 +41,7 @@
         "capacity": "Capacidad para 12 personas",
         "total": "3 habitaciones",
         "queen": "2 con cama Queen",
-        "bunk": "1 con literas matrimoniales"
+        "bunk": "1 con 2 literas matrimoniales"
       },
       "bathrooms": {
         "title": "Baños",
@@ -86,9 +86,11 @@
     "terms": "Términos y Condiciones",
     "privacy": "Política de Privacidad"
   },
-  "calendar": {
-    "title": "Calendario",
-    "subtitle": "Reserva tu estancia en nuestra hermosa casa de alquiler vacacional.",
+  "events": {
+    "title": "Eventos",
+    "subtitle": "Entérate de los eventos que se llevaran a cabo en la zona de San Felipe"
+  },
+    "calendar": {
     "months": {
       "january": "Enero",
       "february": "Febrero",
