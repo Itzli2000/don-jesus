@@ -1,0 +1,25 @@
+---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url) as 'en' | 'es';
+const t = useTranslations(lang);
+---
+
+<div class="container mx-auto px-4 pb-9">
+
+  <div class="flex flex-col lg:flex-row items-center justify-center gap-8">
+    <div class="bg-white p-6 rounded-lg shadow-md">
+      <h3 class="text-xl font-semibold mb-4">{t('priceCards.low')}</h3>
+      <p class="text-xl text-gray-600 mb-4">
+        {t('priceCards.lowDescription')} <span class="text-sm text-gray-500">{t('priceCards.perNight')}</span>
+      </p>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow-md">
+      <h3 class="text-xl font-semibold mb-4">{t('priceCards.high')}</h3>
+      <p class="text-xl text-gray-600 mb-4">
+        {t('priceCards.highDescription')} <span class="text-sm text-gray-500">{t('priceCards.perNight')}</span>
+      </p>
+    </div>
+  </div>
+
+

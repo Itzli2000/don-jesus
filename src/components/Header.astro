@@ -1,92 +1,29 @@
 ---
 import LanguageSwitcher from './LanguageSwitcher.astro';
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
-import { Picture } from 'astro:assets';
-import fullLogo from '../assets/fullLogo.svg';
-
+import DonJesusLogo from './DonJesusLogo.astro';
 const lang = getLangFromUrl(Astro.url) as 'en' | 'es';
 const t = useTranslations(lang);
 ---
 
 <header class="bg-white shadow-md py-4 sticky top-0 z-50">
-  <div class="container mx-auto flex justify-between items-center relative">
+  <div class="container mx-auto flex flex-col lg:flex-row justify-between items-center relative">
     <div class="flex items-center">
-      <a href={`/${lang}`} class="text-2xl font-bold text-blue-600">
-        <Picture src={fullLogo} alt="Don Jesús" height={70} />
+      <a href={`/${lang}`} class="font-bold font-[cursive] text-[#0077b6]">
+        <DonJesusLogo />
       </a>
     </div>
-    
-    <!-- Hamburger menu button for mobile -->
-    <button
-      id="menu-toggle"
-      class="lg:hidden flex flex-col justify-center items-center mr-4"
-      aria-label="Toggle menu"
-    >
-      <span class="h-0.5 w-6 bg-gray-600 mb-1 transform transition-all duration-300"></span>
-      <span class="h-0.5 w-6 bg-gray-600 mb-1 transform transition-all duration-300"></span>
-      <span class="h-0.5 w-6 bg-gray-600 transform transition-all duration-300"></span>
-    </button>
 
-    <!-- Navigation menu -->
-    <nav id="nav-menu" class="absolute lg:static top-full left-0 right-0 bg-white lg:bg-transparent hidden lg:block shadow-md lg:shadow-none">
-      <ul class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6 p-4 lg:p-0">
-        <li><a href={`/${lang}`} class="block hover:text-blue-600">{t('nav.home')}</a></li>
-        <li><a href={`/${lang === 'en' ? 'en/contact' : 'es/contacto'}`} class="block hover:text-blue-600">{t('nav.contact')}</a></li>
-        <li><a href={`/${lang === 'en' ? 'en/events' : 'es/eventos'}`} class="block hover:text-blue-600">{t('nav.events')}</a></li>
-        <li><LanguageSwitcher /></li>
+    <nav>
+      <ul class="flex flex-row space-x-4 space-y-4 lg:space-y-0 lg:space-x-6 p-4 lg:p-0 items-center justify-center">
+        <li class="my-0 mx-2"><a href={`/${lang}`} class="block hover:text-blue-600">{t('nav.home')}</a></li>
+        <li class="my-0 mx-2"><a href={`/${lang === 'en' ? 'en/events' : 'es/eventos'}`} class="block hover:text-blue-600">{t('nav.events')}</a></li>
+        <li class="my-0 mx-2"><a href={`/${lang === 'en' ? 'en/contact' : 'es/contacto'}`} class="block hover:text-blue-600">{t('nav.contact')}</a></li>
+        <li class="my-0 mx-2"><LanguageSwitcher /></li>
       </ul>
     </nav>
+
+    <!-- Navigation menu -->
+    
   </div>
 </header>
-
-<script>
-  function setupMobileMenu() {
-    const menuToggle = document.getElementById('menu-toggle');
-    const navMenu = document.getElementById('nav-menu');
-    const menuBars = menuToggle?.getElementsByTagName('span');
-
-    // Remove existing event listeners if any
-    const newMenuToggle = menuToggle?.cloneNode(true) as HTMLButtonElement;
-    if (menuToggle?.parentNode && newMenuToggle) {
-      menuToggle.parentNode.replaceChild(newMenuToggle, menuToggle);
-    }
-
-    newMenuToggle?.addEventListener('click', () => {
-      navMenu?.classList.toggle('hidden');
-      
-      const newMenuBars = newMenuToggle.getElementsByTagName('span');
-      // Animate hamburger to X
-      if (newMenuBars && newMenuBars.length === 3) {
-        newMenuBars[0].classList.toggle('rotate-45');
-        newMenuBars[0].classList.toggle('translate-y-1.5');
-        newMenuBars[1].classList.toggle('opacity-0');
-        newMenuBars[2].classList.toggle('-rotate-45');
-        newMenuBars[2].classList.toggle('-translate-y-1.5');
-      }
-    });
-
-    // Close menu when clicking outside
-    const handleClickOutside = (event: MouseEvent) => {
-      const target = event.target as HTMLElement;
-      if (!target.closest('#menu-toggle') && !target.closest('#nav-menu')) {
-        navMenu?.classList.add('hidden');
-        
-        const currentMenuBars = document.querySelectorAll('#menu-toggle span');
-        // Reset hamburger animation
-        currentMenuBars.forEach(bar => {
-          bar.classList.remove('rotate-45', 'translate-y-1.5', 'opacity-0', '-rotate-45', '-translate-y-1.5');
-        });
-      }
-    };
-
-    // Remove existing click listener if any
-    document.removeEventListener('click', handleClickOutside);
-    document.addEventListener('click', handleClickOutside);
-  }
-
-  // Run on initial load
-  setupMobileMenu();
-
-  // Run on view transitions
-  document.addEventListener('astro:page-load', setupMobileMenu);
-</script>

@@ -114,5 +114,13 @@
       "friday": "Fri",
       "saturday": "Sat"
     }
-  }
+  },
+  "priceCards": {
+    "title": "Prices",
+    "low": "Low Season",
+    "high": "High Season",
+    "lowDescription": "$ 350.00 USD",
+    "highDescription": "$ 450.00 USD",
+    "perNight": "per night"
+  } 
 }

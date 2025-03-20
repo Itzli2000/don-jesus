@@ -114,5 +114,13 @@
       "friday": "Vie",
       "saturday": "Sab"
     }
+  },
+  "priceCards": {
+    "title": "Precios",
+    "low": "Baja temporada",
+    "high": "Alta temporada",
+    "lowDescription": "$ 350.00 USD",
+    "highDescription": "$ 450.00 USD",
+    "perNight": "por noche"
   }
 }

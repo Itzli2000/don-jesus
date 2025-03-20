@@ -2,6 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 import ContactForm from "../../components/ContactForm.astro";
+import PriceCards from "../../components/PriceCards.astro";
 
 const lang = getLangFromUrl(Astro.url) as "en" | "es";
 const t = useTranslations(lang);
@@ -12,5 +13,10 @@ const t = useTranslations(lang);
   description={t("contact.description")}
   lang={lang}
 >
-  <ContactForm />
+  <div class="container mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold mb-8 text-center">{t('contact.title')}</h2>
+    <p class="text-center mb-8">{t('contact.subtitle')}</p>
+    <PriceCards />
+    <ContactForm />
+  </div>
 </Layout>

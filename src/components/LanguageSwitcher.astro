@@ -12,8 +12,8 @@ if (lang === "en") {
     otherLangPath = otherLangPath.replace("/events", "/eventos");
   }
 
-  if (otherLangPath.includes("/calendar")) {
-    otherLangPath = otherLangPath.replace("/calendar", "/calendario");
+  if (otherLangPath.includes("/contact")) {
+    otherLangPath = otherLangPath.replace("/contact", "/contacto");
   }
 } else {
   otherLangPath = currentPath.replace(/^\/es/, "/en");
@@ -22,8 +22,8 @@ if (lang === "en") {
     otherLangPath = otherLangPath.replace("/eventos", "/events");
   }
 
-  if (otherLangPath.includes("/calendario")) {
-    otherLangPath = otherLangPath.replace("/calendario", "/calendar");
+  if (otherLangPath.includes("/contacto")) {
+    otherLangPath = otherLangPath.replace("/contacto", "/contact");
   }
 }
 
