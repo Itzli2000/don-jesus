@@ -88,7 +88,7 @@ const t = useTranslations(lang);
   </div>
 </div>
 
-<script>
+<script is:inline>
   const modal = document.getElementById("imageModal");
   const modalContent = document.getElementById("modalContent");
   const closeModal = document.getElementById("closeModal");
@@ -99,12 +99,12 @@ const t = useTranslations(lang);
     throw new Error("Required modal elements not found");
   }
 
-  function openModal(index: number) {
+  function openModal(index) {
     const image = imageArray[index];
     const pictureElement = image.querySelector("picture");
     if (pictureElement && modalContent && modal) {
       // Clone the picture element to preserve the transition
-      const clonedPicture = pictureElement.cloneNode(true) as HTMLElement;
+      const clonedPicture = pictureElement.cloneNode(true);
       modalContent.innerHTML = "";
       modalContent.appendChild(clonedPicture);
       modal.classList.remove("hidden");
