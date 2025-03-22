@@ -117,8 +117,8 @@
   },
   "priceCards": {
     "title": "Precios",
-    "low": "Baja temporada",
-    "high": "Alta temporada",
+    "low": "Temporada baja",
+    "high": "Temporada alta",
     "lowDescription": "$ 350.00 USD",
     "highDescription": "$ 450.00 USD",
     "perNight": "por noche"
